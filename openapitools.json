@@ -1,0 +1,26 @@
+{
+  "$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+  "spaces": 2,
+  "generator-cli": {
+    "version": "5.2.0",
+    "generators": {
+      "client": {
+        "generatorName": "typescript-axios",
+        "output": "./generated/client",
+        "glob": "./generated/open-api.json",
+        "enablePostProcessFile": true,
+        "additionalProperties": {
+          "withSeparateModelsAndApi": true,
+          "apiPackage": "api",
+          "modelPackage": "models",
+          "enumPropertyNaming": "UPPERCASE",
+          "useSingleRequestParameter": true
+        },
+        "typeMappings": {
+          "date": "Date",
+          "DateTime": "Date"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "tsoa-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hedrall/tsoa-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hedrall/tsoa-test/issues"
+  },
+  "homepage": "https://github.com/hedrall/tsoa-test#readme",
+  "devDependencies": {
+    "@openapitools/openapi-generator-cli": "2.4.12",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.7",
+    "esbuild": "^0.13.13",
+    "esbuild-register": "^3.1.2",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.7",
+    "express": "^4.17.1",
+    "swagger-ui": "^4.1.0",
+    "tsoa": "^3.14.1"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "entryFile": "api/src/app.ts",
+  "noImplicitAdditionalProperties": "throw-on-extras",
+  "controllerPathGlobs": ["api/**/controller.ts"],
+  "spec": {
+    "outputDirectory": "generated",
+    "specVersion": 3,
+    "specFileBaseName": "open-api",
+    "version": "1",
+    "basePath": "v1",
+    "xEnumVarnames": true
+  },
+  "routes": {
+    "routesDir": "generated",
+    "authenticationModule": "api/src/authentication.ts"
+  },
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@api/*": ["./*"],
+      "@common/*": ["../common/*"]
+    }
+  },
+  "ignore": [
+    "**/common/node_modules/**"
+  ]
+}
