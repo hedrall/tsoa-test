@@ -6,7 +6,7 @@ class MyUser {
 }
 
 @Route('user')
-export class MemoController extends Controller {
+export class UserController extends Controller {
   constructor() {
     super();
   }
@@ -14,7 +14,7 @@ export class MemoController extends Controller {
   @Get('')
   @Security('security-name')
   @OperationId('get-user')
-  public async update(@Request() request: express.Request, @Query() id: string): Promise<MyUser> {
+  public async get(@Request() request: express.Request, @Query() id: string): Promise<MyUser> {
     console.log('受け取ったID', id);
     return new MyUser(10000000, 'テストユーザ名');
   }

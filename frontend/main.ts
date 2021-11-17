@@ -10,5 +10,6 @@ const client = new DefaultApi(new Configuration({
 
 window.addEventListener('load', async () => {
   const res = await client.getUser({ id: 'dummy-id' });
-  document.querySelector('.res').textContent = JSON.stringify(res.data, null, '  ');
+  const resElem = document.querySelector('.res');
+  resElem && (resElem.textContent = JSON.stringify(res.data, null, '  '));
 })
