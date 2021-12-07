@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "tsoa": "tsoa spac-and-routes",
+    "openapi-generator": "openapi-generator-cli version-manager set 5.2.0 && openapi-generator-cli generate"
   },
   "repository": {
     "type": "git",

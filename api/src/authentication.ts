@@ -2,7 +2,7 @@ import * as express from 'express';
 
 export async function expressAuthentication(
   request: express.Request,
-  _securityName: string,
+  securityName: string,
   scope?: string[],
 ): Promise<{ id: string }> {
   /**

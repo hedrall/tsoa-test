@@ -16,6 +16,7 @@ export class UserController extends Controller {
   @OperationId('get-user')
   public async get(@Request() request: express.Request, @Query() id: string): Promise<MyUser> {
     console.log('受け取ったID', id);
+    console.log('リクエストユーザID', request.user.id);
     return new MyUser(10000000, 'テストユーザ名');
   }
 }

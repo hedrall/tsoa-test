@@ -16,10 +16,7 @@
   },
   "compilerOptions": {
     "baseUrl": "./",
-    "paths": {
-      "@api/*": ["./*"],
-      "@common/*": ["../common/*"]
-    }
+    "paths": { "@api/*": ["./*"] }
   },
   "ignore": [
     "**/common/node_modules/**"
