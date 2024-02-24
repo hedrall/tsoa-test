@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tsoa": "tsoa spac-and-routes",
+    "tsoa": "tsoa spec-and-routes",
     "openapi-generator": "openapi-generator-cli version-manager set 5.2.0 && openapi-generator-cli generate"
   },
   "repository": {
